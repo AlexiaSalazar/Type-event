@@ -1,0 +1,26 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block 'head' %}
+    <link href="{% static 'usuario/css/usuario.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block 'body' %}
+
+    <div class="container-fluid bg-inscricao">
+        
+        <div class="row">
+            <div class="col-md">
+                <h3 class="logo">Type.Event</h3>
+                {% include 'parcial/usuario/login.html' %}
+                <img src="{% static 'base/img/logo.png' %}" class="logo-evento">
+            </div>
+
+            <div class="col-md bg-img">
+            
+            </div>
+        
+        </div>
+    </div>
+
+{% endblock %}
